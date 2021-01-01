@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap");
+
+$colot-Strong-Cyan: #26baa4;
+$color-Light-Blue: hsl(233, 100%, 69%);
+$color-Dark-Grayish-Blue: hsl(210, 10%, 33%);
+$color-Grayish-Blue: hsl(201, 11%, 66%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.8rem;
+  padding-top: 8rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: $color-Dark-Grayish-Blue;
+}
+p {
+  color: $color-Grayish-Blue;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul,
+ol {
+  color: $color-Dark-Grayish-Blue;
+  list-style: none;
+}
+
+//content h1 and p styling
+.content {
+  margin: auto;
+  width: 55%;
+  text-align: center;
+  h1 {
+    font-weight: 600;
+    font-size: 3.5rem;
+    margin: 2rem 0;
+  }
+  p {
+    line-height: 1.7;
+  }
+}
+//buttons stylings
+.buttons {
+  margin: 3.5rem auto;
+  display: flex;
+  justify-content: center;
+  .btn {
+    box-shadow: 0 0.3rem 0.4rem rgba($color: #000000, $alpha: 0.4);
+    outline: none;
+    border-radius: 100rem;
+    padding: 1.5rem 3rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+    a {
+      font-size: 1.6rem;
+    }
+  }
+
+  .ios {
+    margin-right: 0.7rem;
+    background-color: $colot-Strong-Cyan;
+  }
+  .mac {
+    margin-left: 0.7rem;
+    background-color: $color-Light-Blue;
+  }
+}
+
+//heading section styling
+.head {
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
+  }
+  .content {
+    width: 50%;
+    h1 {
+      font-weight: 700;
+      font-size: 4rem;
+    }
+  }
+}
+
+//first body styling
+.body1 {
+  margin-top: 6rem;
+  padding-top: 6rem;
+
+  .image-content {
+    margin-top: 8rem;
+    margin-left: -3rem;
+    display: flex;
+    align-items: center;
+
+    .img {
+      margin-right: 7rem;
+    }
+    .cards {
+      width: 30%;
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        margin-top: 1rem;
+        line-height: 2;
+      }
+      .card2 {
+        margin: 5rem 0;
+      }
+    }
+  }
+}
+
+.body2 {
+  margin-top: 6rem;
+  padding-top: 6rem;
+  .image-body {
+    margin-top: 12rem;
+    text-align: center;
+  }
+}
+
+.body3 {
+  .features {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 8rem;
+
+    .feature {
+      text-align: center;
+      h2 {
+        margin: 2rem 0;
+      }
+      p {
+        line-height: 2;
+      }
+    }
+
+    .feature2,
+    .feature3 {
+      h2 {
+        margin-top: 2.8rem;
+      }
+    }
+  }
+
+  .companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 15rem auto;
+  }
+}
+
+footer {
+  margin-top: 12rem;
+  padding: 2rem 10%;
+  background-color: #f5f6f8;
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      flex: 1;
+      img {
+        width: 5rem;
+      }
+    }
+
+    .links {
+      flex: 2;
+      display: flex;
+      justify-content: space-between;
+      li {
+        margin: 1rem 0;
+
+        &:hover {
+          cursor: pointer;
+          color: $colot-Strong-Cyan;
+        }
+      }
+    }
+
+    .social {
+      flex: 2;
+      text-align: end;
+      img:nth-child(2) {
+        margin: 0 2rem;
+      }
+      img:hover {
+        filter: invert(57%) sepia(90%) saturate(337%) hue-rotate(121deg)
+          brightness(89%) contrast(95%);
+      }
+    }
+  }
+
+  .attribution {
+    margin-top: 2rem;
+    color: #ad7800;
+    a {
+      color: #0e3fad;
+    }
+  }
+}

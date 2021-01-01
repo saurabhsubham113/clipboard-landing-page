@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.8rem;
+  padding-top: 8rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #4c545d;
+}
+
+p {
+  color: #9fabb2;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul,
+ol {
+  color: #4c545d;
+  list-style: none;
+}
+
+.content {
+  margin: auto;
+  width: 55%;
+  text-align: center;
+}
+
+.content h1 {
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+
+.content p {
+  line-height: 1.7;
+}
+
+.buttons {
+  margin: 3.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons .btn {
+  -webkit-box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.4);
+  outline: none;
+  border-radius: 100rem;
+  padding: 1.5rem 3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons .btn:hover {
+  opacity: 0.9;
+}
+
+.buttons .btn a {
+  font-size: 1.6rem;
+}
+
+.buttons .ios {
+  margin-right: 0.7rem;
+  background-color: #26baa4;
+}
+
+.buttons .mac {
+  margin-left: 0.7rem;
+  background-color: #6173ff;
+}
+
+.head .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 7rem;
+}
+
+.head .content {
+  width: 50%;
+}
+
+.head .content h1 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.body1 {
+  margin-top: 6rem;
+  padding-top: 6rem;
+}
+
+.body1 .image-content {
+  margin-top: 8rem;
+  margin-left: -3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body1 .image-content .img {
+  margin-right: 7rem;
+}
+
+.body1 .image-content .cards {
+  width: 30%;
+}
+
+.body1 .image-content .cards h1 {
+  font-size: 2.2rem;
+}
+
+.body1 .image-content .cards p {
+  margin-top: 1rem;
+  line-height: 2;
+}
+
+.body1 .image-content .cards .card2 {
+  margin: 5rem 0;
+}
+
+.body2 {
+  margin-top: 6rem;
+  padding-top: 6rem;
+}
+
+.body2 .image-body {
+  margin-top: 12rem;
+  text-align: center;
+}
+
+.body3 .features {
+  width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 8rem;
+}
+
+.body3 .features .feature {
+  text-align: center;
+}
+
+.body3 .features .feature h2 {
+  margin: 2rem 0;
+}
+
+.body3 .features .feature p {
+  line-height: 2;
+}
+
+.body3 .features .feature2 h2,
+.body3 .features .feature3 h2 {
+  margin-top: 2.8rem;
+}
+
+.body3 .companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 15rem auto;
+}
+
+footer {
+  margin-top: 12rem;
+  padding: 2rem 10%;
+  background-color: #f5f6f8;
+}
+
+footer .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .main-footer .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .main-footer .logo img {
+  width: 5rem;
+}
+
+footer .main-footer .links {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .main-footer .links li {
+  margin: 1rem 0;
+}
+
+footer .main-footer .links li:hover {
+  cursor: pointer;
+  color: #26baa4;
+}
+
+footer .main-footer .social {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: end;
+}
+
+footer .main-footer .social img:nth-child(2) {
+  margin: 0 2rem;
+}
+
+footer .main-footer .social img:hover {
+  -webkit-filter: invert(57%) sepia(90%) saturate(337%) hue-rotate(121deg) brightness(89%) contrast(95%);
+          filter: invert(57%) sepia(90%) saturate(337%) hue-rotate(121deg) brightness(89%) contrast(95%);
+}
+
+footer .attribution {
+  margin-top: 2rem;
+  color: #ad7800;
+}
+
+footer .attribution a {
+  color: #0e3fad;
+}
+/*# sourceMappingURL=style.css.map */
