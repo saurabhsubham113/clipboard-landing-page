@@ -255,9 +255,9 @@ footer .main-footer .links li:hover {
 }
 
 footer .main-footer .social {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: end;
 }
 
@@ -277,5 +277,99 @@ footer .attribution {
 
 footer .attribution a {
   color: #0e3fad;
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  .buttons .ios {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .buttons .mac {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+  body {
+    font-size: 2.4rem;
+  }
+  .content {
+    width: 80%;
+  }
+  .head .content {
+    width: 80%;
+  }
+  .body1 .image-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+  }
+  .body1 .image-content .img {
+    width: 80%;
+    margin-right: 0;
+  }
+  .body1 .image-content .img img {
+    width: 100%;
+  }
+  .body1 .image-content .cards {
+    width: 80%;
+    text-align: center;
+  }
+  .body2 .image-body {
+    width: 80%;
+    margin: 5rem auto;
+  }
+  .body2 .image-body img {
+    width: 100%;
+  }
+  .body3 .companies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5rem auto;
+  }
+  .body3 .companies img {
+    margin: 4rem 0;
+  }
+  .body3 .features {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 6rem;
+    margin-top: 10rem;
+  }
+  footer .main-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  footer .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .links li {
+    margin: 0 0 !important;
+    margin-top: 1.5rem !important;
+  }
+  footer .social {
+    margin-top: 4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

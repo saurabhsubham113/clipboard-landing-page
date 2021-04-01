@@ -211,7 +211,7 @@ footer {
     }
 
     .social {
-      flex: 2;
+      flex: 1;
       text-align: end;
       img:nth-child(2) {
         margin: 0 2rem;
@@ -228,6 +228,99 @@ footer {
     color: #ad7800;
     a {
       color: #0e3fad;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .buttons {
+    flex-direction: column;
+    width: 80%;
+    .ios {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    .mac {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+  body {
+    font-size: 2.4rem;
+  }
+  .content {
+    width: 80%;
+  }
+  .head {
+    .content {
+      width: 80%;
+    }
+  }
+  .body1 {
+    .image-content {
+      flex-direction: column;
+      margin-left: 0;
+
+      .img {
+        width: 80%;
+        margin-right: 0;
+        img {
+          width: 100%;
+        }
+      }
+
+      .cards {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  }
+  .body2 {
+    .image-body {
+      width: 80%;
+      margin: 5rem auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .body3 {
+    .companies {
+      flex-direction: column;
+      margin: 5rem auto;
+
+      img {
+        margin: 4rem 0;
+      }
+    }
+    .features {
+      grid-template-columns: 1fr;
+      gap: 6rem;
+      margin-top: 10rem;
+    }
+  }
+
+  footer {
+    .main-footer {
+      flex-direction: column;
+      text-align: center;
+    }
+    .links {
+      flex-direction: column;
+      li {
+        margin: 0 0 !important;
+        margin-top: 1.5rem !important;
+      }
+    }
+    .social {
+      margin-top: 4rem;
     }
   }
 }
